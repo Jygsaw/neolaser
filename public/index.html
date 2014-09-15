@@ -1,10 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="neolaser">
   <head>
     <title>Neo LASER</title>
     <link rel="stylesheet" type="text/css" href="css/app.css" />
   </head>
   <body>
     <img src="img/bakerhughes-icon.png">
+    <div class="navigation">
+      <a ui-sref="dashboard">Dashboard</a>
+      <a ui-sref="samples">Samples</a>
+    </div>
+    <div class="content" ui-view></div>
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.0.1/angular.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/angular-ui-router/0.2.10/angular-ui-router.min.js"></script>
+    <script type="text/javascript" src="src/app.js"></script>
+    <script type="text/javascript" src="src/dashboard/dashboard.js"></script>
+    <script type="text/javascript" src="src/samples/samples.js"></script>
   </body>
 </html>
