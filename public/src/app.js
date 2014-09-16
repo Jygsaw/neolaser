@@ -1,5 +1,6 @@
 angular.module('neolaser', [
   'ui.router',
+  'neolaser.factories',
   'neolaser.dashboard',
   'neolaser.samples',
 ])
